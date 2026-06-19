@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brasileirão 2025</title>
+<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <h1><i class="fas fa-trophy"></i> Brasileirão Série A 2025</h1>
+      <nav class="main-nav">
+        <button class="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-list">
+          <li><a href="../classificação/classificaçãoA.html" target="_blank" class="nav-link"><i class="fas fa-table-list"></i> Série A</a></li>
+          <li><a href="../classificação/classificaçãoB.html" target="_blank" class="nav-link"><i class="fas fa-ranking-star"></i> Série B</a></li>
+          <li><a href="../estatisticas/estatisticas.html" target="_blank" class="nav-link"><i class="fas fa-chart-simple"></i> Estatísticas</a></li>
+          <li><a href="../login/login.html" target="_blank" class="nav-link cta-button"><i class="fas fa-user-plus"></i> Cadastro</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="carrossel-container">
+      <div class="carrossel">
+        <div class="carrossel-track" id="carrosselTrack">
+          <img src="../imagens/VoltaBrasileiro.webp" alt="Imagem 1">
+          <img src="../imagens/lorran-flamengo-3_20250219104905.webp" alt="Imagem 2">
+          <img src="../imagens/torcida.jpg" alt="Imagem 3">
+          <img src="../imagens/flamengo-x-palmeiras.jpg.1200x0_q70_crop-top.webp" alt="Imagem 4">
+        </div>
+        <div id="carrosselLegenda" class="carrossel-legenda"></div>
+        <div class="botoes">
+          <button onclick="anterior()">◀</button>
+          <button onclick="proxima()">▶</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <h2 class="section-title">Destaques e Novidades</h2>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-image">
+              <img src="../imagens/palmeiras-164.png" alt="" >
+            </div>
+            <div class="team-content">
+              <h3>Palmeiras</h3>
+              <p>Segue entre os líderes com campanha sólida: 7 vitórias, 1 empate e 3 derrotas. Tem uma das melhores defesas do campeonato e ótimo desempenho fora de casa. Estêvão, Flaco López e Facundo Torres se destacam ofensivamente. Abel Ferreira deve renovar até 2026.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-image">
+              <img src="../imagens/Logo_Flamengo_crest_1980-2018.png" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Flamengo</h3>
+              <p>Lider do campeonato com o melhor ataque (24 gols). De Arrascaeta é artilheiro do campeonato com 9 gols e Memphis Depay mostra boa adaptação. Pedro também é peça fundamental no setor ofensivo. O time mira o Brasileirão e o Mundial de Clubes.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-image">
+              <img src="../imagens/Logo_Cruzeiro_1996.png" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Cruzeiro</h3>
+              <p>Vice-líder do campeonato, vem fazendo uma surpresa positiva com 23 pontos e forte campanha. Kaio Jorge é vice-artilheiro com 8 gols. O time ganhou força com reforços como Gabriel (ex-Corinthians) e mira mais nomes de peso.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-image">
+              <img src="../imagens/RedBullBragantino.png" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Bragantino</h3>
+              <p>Igualado ao Cruzeiro em pontos, tem surpreendido com atuações consistentes após campanha irregular em 2024. Isidro Pitta é um dos destaques ofensivos. Briga firme por vaga direta na Libertadores.</p>
+            </div>
+          </div>
+
+          <div class="team-card">
+            <div class="team-image">
+              <img src="../imagens/Fluminense_FC_escudo.png" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Fluminense</h3>
+              <p>Em 5º lugar com 20 pontos, mantém um estilo ofensivo sob comando de Fernando Diniz. Destaques individuais incluem Riquelme Felipe e o jovem Isaac. Time mantém regularidade e disputa vaga no G4.</p>
+            </div>
+          </div>
+          
+          <div class="team-card">
+            <div class="team-image">
+              <img src="../imagens/Escudo_Botafogo.png" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Botafogo</h3>
+              <p>Atual campeão, ocupa a 6ª posição e tenta manter o bom momento. Reforços internacionais como Jovic e Joaquín Correa ampliam a competitividade do elenco. Arthur Cabral também chegou para reforçar o ataque.</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="league-stats">
+      <div class="container">
+        <h2 class="section-title">Estatísticas do Campeonato</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-futbol"></i></div>
+            <div class="stat-content">
+              <h3>248</h3>
+              <p>Gols marcados</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-users"></i></div>
+            <div class="stat-content">
+              <h3>20</h3>
+              <p>Equipes</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-ticket"></i></div>
+            <div class="stat-content">
+              <h3> 25.300 M</h3>
+              <p>Espectadores</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-star"></i></div>
+            <div class="stat-content">
+              <h3>38</h3>
+              <p>Rodadas</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2><i class="fas fa-trophy"></i> Brasileirão 2025</h2>
+          <p>O melhor do futebol brasileiro.</p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contato</h3>
+          <p><i class="fas fa-phone"></i> <a href="tel:91 94857436">(91) 9485-7436</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:lothus794@gmail.com">lothus794@gmail.com</a></p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

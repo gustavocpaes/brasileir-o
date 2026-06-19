@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasileirão 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header id="cabecalho">
+    <div class="container header-container">
+      <div class="logo-container">
+        <div class="logo-badge">
+          <span class="logo-text">BR</span>
+        </div>
+        <h1>Brasileirão 2025</h1>
+      </div>
+      <nav id="nav-principal">
+        <ul>
+          <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+          <li><a href="#artilheiros" class="nav-link">Artilheiros</a></li>
+          <li><a href="#estatisticas" class="nav-link">Estatísticas</a></li>
+          <li><a href="#times" class="nav-link">Times</a></li>
+          <li><a href="#comparar" class="nav-link">Comparar</a></li>
+        </ul>
+        <button id="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="dashboard" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">🏠</div>
+          <h2>Dashboard</h2>
+        </div>
+        <div class="cards-container">
+          <div class="card dashboard-card">
+            <h3>Rodada Atual: 15ª</h3>
+            <div class="card-content">
+              <div class="highlight-match">
+                <div class="team">
+                  <img src="https://logodetimes.com/times/flamengo/logo-flamengo-256.png" alt="Flamengo">
+                  <span>FLA</span>
+                </div>
+                <div class="score">
+                  <span>3 x 1</span>
+                </div>
+                <div class="team">
+                  <img src="https://logodetimes.com/times/palmeiras/logo-palmeiras-256.png" alt="Palmeiras">
+                  <span>PAL</span>
+                </div>
+              </div>
+              <p class="match-info">Maracanã, Rio de Janeiro</p>
+            </div>
+          </div>
+          
+          <div class="card dashboard-card">
+            <h3>Classificação</h3>
+            <div class="card-content">
+              <ol class="ranking-list">
+                <li><img src="https://logodetimes.com/times/flamengo/logo-flamengo-256.png" alt="Flamengo"> Flamengo - 34 pts</li>
+                <li><img src="https://logodetimes.com/times/palmeiras/logo-palmeiras-256.png" alt="Palmeiras"> Palmeiras - 31 pts</li>
+                <li><img src="https://logodetimes.com/times/botafogo/logo-botafogo-256.png" alt="Botafogo"> Botafogo - 29 pts</li>
+                <li><img src="https://logodownload.org/wp-content/uploads/2016/09/vasco-da-gama-logo-0.png" alt="Vasco"> Vasco - 28 pts</li>
+                <li><img src="https://logodetimes.com/times/corinthians/logo-corinthians-256.png" alt="Corinthians"> Corinthians - 27 pts</li>
+              </ol>
+            </div>
+          </div>
+          
+          <div class="card dashboard-card">
+            <h3>Próximos Jogos</h3>
+            <div class="card-content">
+              <ul class="match-list">
+                <li>
+                  <span class="match-date">Sáb, 17/05</span>
+                  <span class="match-teams">Corinthians x São Paulo</span>
+                </li>
+                <li>
+                  <span class="match-date">Dom, 18/05</span>
+                  <span class="match-teams">Cruzeiro x Fluminense</span>
+                </li>
+                <li>
+                  <span class="match-date">Dom, 18/05</span>
+                  <span class="match-teams">Vasco x Botafogo</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="artilheiros" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">⚽</div>
+          <h2>Artilheiros e Destaques</h2>
+        </div>
+        <div class="artilheiros-container">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="estatisticas" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">📊</div>
+          <h2>Estatísticas Gerais</h2>
+        </div>
+        <div class="card">
+          <div class="table-responsive">
+            <table class="stats-table">
+              <thead>
+                <tr>
+                  <th>Categoria</th>
+                  <th>Líder</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="stats-table-body">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="times" class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-icon">🏟️</div>
+          <h2>Estatísticas por Time</h2>
+        </div>
+        <div class="card team-filter">
+          <div class="select-container">
+            <label for="select-time">Selecione o time:</label>
+            <select id="select-time">
+              <option value="flamengo">Flamengo</option>
+              <option value="palmeiras">Palmeiras</option>
+              <option value="corinthians">Corinthians</option>
+              <option value="vasco">Vasco</option>
+              <option value="botafogo">Botafogo</option>
+              <option value="cruzeiro">Cruzeiro</option>
+              <option value="fluminense">Fluminense</option>
+              <option value="saopaulo">São Paulo</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="team-stats-container">
+          <div class="card team-info">
+            <div id="team-profile">
+
+            </div>
+          </div>
+          
+          <div class="card">
+            <h3>Jogadores Destaques</h3>
+            <div id="team-players">
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <button id="btnTopo" title="Voltar ao topo">↑</button>
+
+  <script src="main.js"></script>
+</body>
+</html>

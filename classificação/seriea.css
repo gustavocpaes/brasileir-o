@@ -1,0 +1,160 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 20px;
+      color: #333
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 10px 6px;
+      text-align: center;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background-color: #f8f9fa;
+      font-weight: 600;
+    }
+    .libertadores { background-color: #1e3a8a; color: #fff; }
+    .pre-libertadores { background-color: #3b82f6; color: #fff; }
+    .sul-americana { background-color: #d1fae5; }
+    .rebaixamento { background-color: #fee2e2; }
+    .g4 { background-color: #d4edda; }
+
+    .form span {
+      font-size: 14px;
+      margin: 0 2px;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    .win { background-color: #16a34a; }
+    .draw { background-color: #9ca3af; }
+    .loss { background-color: #dc2626; }
+
+    .legenda {
+      margin-top: 25px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .legenda h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .legenda-item {
+      display: flex;
+      align-items: center;
+      margin: 6px 0;
+      font-size: 14px;
+    }
+    .legenda-color {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .cor-libertadores { background-color: #1e3a8a; }
+    .cor-pre-libertadores { background-color: #3b82f6; }
+    .cor-sul-americana { background-color: #d1fae5; border: 1px solid #ccc; }
+    .cor-rebaixamento { background-color: #fee2e2; border: 1px solid #ccc; }
+
+    .jogos-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .jogo {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      min-width: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+    .jogo h3 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      color: #555;
+    }
+
+    .jogo h2 {
+      margin: -15px -15px 10px -15px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #0A5C36;
+      padding: 12px 0;
+      border-radius: 8px 8px 0 0;
+      text-align: center;
+    }
+    .jogo p {
+      margin: 5px 0;
+      color: #777;
+    }
+    .logo {
+  width: 30px;
+  height: 30px; 
+  object-fit: cover;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.times-jogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+
+.time-jogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.escudo-jogo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 4px;
+}
+
+.versus {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Responsivo para telas menores */
+@media (max-width: 900px) {
+  .jogos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .jogos-container {
+    grid-template-columns: 1fr;
+  }
+}
